@@ -1,3 +1,5 @@
+import java.lang.Math.*;
+import java.lang.*;
 
 public class Fibonacci {
     /**
@@ -14,7 +16,16 @@ public class Fibonacci {
      * @param n an iteration of the fibonacci sequence.
      * @return the nth number of fibonacci sequence.
      */
+    public static void main(String[] args){}
     public int fib(int n){
-        return 0;
+
+       // int num = ((1.618034)**n-(1-1.618034)**n))/(5^(.5));
+        double numA;
+      
+        numA = (Math.pow(1.618034,n) - Math.pow(1-1.618034,n))/Math.pow(5,.5);
+        Double newData = numA;
+        int value = newData.intValue();
+     
+        return value;
     }
 }
